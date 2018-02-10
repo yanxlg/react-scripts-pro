@@ -21,6 +21,13 @@ const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 
+
+
+const CleanPlugin = require('./clean-css');
+const importJson =  require('./sass-import-json');
+
+
+
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
 const publicPath = paths.servedPath;
@@ -58,21 +65,27 @@ const extractTextPluginOptions = shouldUseRelativeAssetPaths
 // It compiles slowly and is focused on producing a fast and minimal bundle.
 // The development configuration is different and lives in a separate file.
 module.exports = {
-  // Don't attempt to continue if there are any errors.
   bail: true,
-  // We generate sourcemaps in production. This is slow but gives good results.
-  // You can exclude the *.map files from the build during deployment.
   devtool: shouldUseSourceMap ? 'source-map' : false,
-  // In production, we only want to load the polyfills and the app code.
-  entry: [require.resolve('./polyfills'), paths.appIndexJs],
+    entry: {
+        "polyfill":["babel-polyfill"],
+        'react':["react"],
+        'react-dom':['react-dom'],
+        'axios':['axios'],
+        "bundle":[
+            require.resolve('./polyfills'),
+            require.resolve('react-dev-utils/webpackHotDevClient'),
+            paths.appIndexJs
+        ]
+    },
   output: {
     // The build folder.
     path: paths.appBuild,
     // Generated JS file names (with nested folders).
     // There will be one main bundle, and one file per asynchronous chunk.
     // We don't currently advertise code splitting but Webpack supports it.
-    filename: 'static/js/[name].[chunkhash:8].js',
-    chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js',
+    filename: 'business/[name].[chunkhash:8].js',
+    chunkFilename: 'business/[name].[chunkhash:8].chunk.js',
     // We inferred the "public path" (such as / or /my-project) from homepage.
     publicPath: publicPath,
     // Point sourcemap entries to original disk location (format as URL on Windows)
@@ -80,6 +93,11 @@ module.exports = {
       path
         .relative(paths.appSrc, info.absoluteResourcePath)
         .replace(/\\/g, '/'),
+  },
+  externals: {
+      "axios":"axios",
+      'react': 'React',
+      'react-dom': 'ReactDOM',
   },
   resolve: {
     // This allows you to set a fallback for where Webpack should look for modules.
@@ -96,7 +114,7 @@ module.exports = {
     // https://github.com/facebookincubator/create-react-app/issues/290
     // `web` extension prefixes have been added for better support
     // for React Native Web.
-    extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
+    extensions: [' ','.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx','.ts', '.tsx', '.es6'],
     alias: {
       // @remove-on-eject-begin
       // Resolve Babel runtime relative to react-scripts.
@@ -152,6 +170,12 @@ module.exports = {
         ],
         include: paths.appSrc,
       },
+        /*   {
+            test: /\.(ts|tsx)$/,
+            loader: require.resolve('tslint-loader'),
+            enforce: 'pre',
+            include: paths.appSrc,
+        },*/
       {
         // "oneOf" will traverse all following loaders until one will
         // match the requirements. When no loader matches it will fall
@@ -167,6 +191,25 @@ module.exports = {
               name: 'static/media/[name].[hash:8].[ext]',
             },
           },
+            {
+                test: /.(svg|eot|ttf|woff)$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'static/icons/[name].[hash:8].[ext]',
+                },
+            },
+            {
+                test: /\.(ts|tsx)$/,
+                include: [
+                    paths.appSrc,
+                    path.resolve("./node_modules"),
+                ],
+                use:[{
+                    loader: 'babel-loader'
+                },{
+                    loader: require.resolve('ts-loader'),
+                }]
+            },
           // Process JS with Babel.
           {
             test: /\.(js|jsx|mjs)$/,
@@ -239,6 +282,113 @@ module.exports = {
             ),
             // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
           },
+            {
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract(
+                    Object.assign(
+                        {
+                            fallback: {
+                                loader: require.resolve('style-loader'),
+                                options: {
+                                    hmr: false,
+                                },
+                            },
+                            use: [
+                                {
+                                    loader: require.resolve('css-loader'),
+                                    options: {
+                                        importLoaders: 1,
+                                        minimize: true,
+                                        sourceMap: shouldUseSourceMap,
+                                    },
+                                },
+                                {
+                                    loader: require.resolve('postcss-loader'),
+                                    options: {
+                                        // Necessary for external CSS imports to work
+                                        // https://github.com/facebookincubator/create-react-app/issues/2677
+                                        ident: 'postcss',
+                                        plugins: () => [
+                                            require('postcss-flexbugs-fixes'),
+                                            autoprefixer({
+                                                browsers: [
+                                                    '>1%',
+                                                    'last 4 versions',
+                                                    'Firefox ESR',
+                                                    'not ie < 9', // React doesn't support IE8 anyway
+                                                ],
+                                                flexbox: 'no-2009',
+                                            }),
+                                        ],
+                                    },
+                                },
+                                {
+                                    loader:'resolve-url-loader',
+                                    options:{
+                                        debug:false,
+                                        absolute:false,
+                                    }
+                                },
+                                {
+                                    loader: 'sass-loader',
+                                    options: {
+                                        importer: [importJson],
+                                        data: '$rootPath: "./src";',
+                                        sourceMap:true
+                                    },
+                                }
+                            ],
+                        },
+                        extractTextPluginOptions
+                    )),
+            },
+            {
+                test: /\.less$/,
+                use: ExtractTextPlugin.extract(
+    
+                    Object.assign(
+                        {
+                            fallback: {
+                                loader: require.resolve('style-loader'),
+                                options: {
+                                    hmr: false,
+                                },
+                            },
+                            use: [
+                                {
+                                    loader: require.resolve('css-loader'),
+                                    options: {
+                                        importLoaders: 1,
+                                        minimize: true,
+                                        sourceMap: shouldUseSourceMap,
+                                    },
+                                },
+                                {
+                                    loader: require.resolve('postcss-loader'),
+                                    options: {
+                                        // Necessary for external CSS imports to work
+                                        // https://github.com/facebookincubator/create-react-app/issues/2677
+                                        ident: 'postcss',
+                                        plugins: () => [
+                                            require('postcss-flexbugs-fixes'),
+                                            autoprefixer({
+                                                browsers: [
+                                                    '>1%',
+                                                    'last 4 versions',
+                                                    'Firefox ESR',
+                                                    'not ie < 9', // React doesn't support IE8 anyway
+                                                ],
+                                                flexbox: 'no-2009',
+                                            }),
+                                        ],
+                                    },
+                                },
+                                require.resolve('less-loader'),
+                            ],
+                        },
+                        extractTextPluginOptions
+                    )),
+            },
           // "file" loader makes sure assets end up in the `build` folder.
           // When you `import` an asset, you get its filename.
           // This loader doesn't use a "test" so it will catch all modules
@@ -261,6 +411,7 @@ module.exports = {
     ],
   },
   plugins: [
+      new CleanPlugin(),
     // Makes some environment variables available in index.html.
     // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
@@ -270,6 +421,8 @@ module.exports = {
     // Generates an `index.html` file with the <script> injected.
     new HtmlWebpackPlugin({
       inject: true,
+      title: paths.webName,
+      filename: `index.html`,
       template: paths.appHtml,
       minify: {
         removeComments: true,
@@ -283,6 +436,13 @@ module.exports = {
         minifyCSS: true,
         minifyURLs: true,
       },
+        chunks:["bundle","polyfill","react","react-dom","axios"],
+        chunksSortMode:function(a,b) {
+            let index={"polyfill":1,"react":2,"react-dom":3,"axios":4,"bundle":5},
+                aI=index[a.origins[0].name],
+                bI=index[b.origins[0].name];
+            return aI&&bI?aI-bI:-1;
+        }
     }),
     // Makes some environment variables available to the JS code, for example:
     // if (process.env.NODE_ENV === 'production') { ... }. See `./env.js`.
@@ -292,12 +452,10 @@ module.exports = {
     // Minify the code.
     new webpack.optimize.UglifyJsPlugin({
       compress: {
-        warnings: false,
-        // Disabled because of an issue with Uglify breaking seemingly valid code:
-        // https://github.com/facebookincubator/create-react-app/issues/2376
-        // Pending further investigation:
-        // https://github.com/mishoo/UglifyJS2/issues/2011
-        comparisons: false,
+          warnings: false,
+          comparisons: false,
+          drop_debugger: true,
+          drop_console: true
       },
       mangle: {
         safari10: true,

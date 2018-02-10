@@ -38,13 +38,13 @@ const webpack = require('webpack');
 //支持自定义prod config
 
 
-const prodConfigExist = fs.existsSync(path.json(__dirname,"config/webpack.config.prod.js"));
+const prodConfigExist = fs.existsSync(path.join(__dirname,"config/webpack.config.prod.js"));
 
 if(prodConfigExist){
     console.log("use custom prod config".green);
 }
 
-const config = prodConfigExist?require(path.json(__dirname,"config/webpack.config.prod.js")):require('../config/webpack.config.prod');
+const config = prodConfigExist?require(path.join(__dirname,"config/webpack.config.prod.js")):require('../config/webpack.config.prod');
 
 
 

@@ -51,24 +51,24 @@ const path = require('path');
 //支持外部配置文件
 
 
-const devConfigExist = fs.existsSync(path.json(__dirname,"config/webpack.config.dev.js"));
+const devConfigExist = fs.existsSync(path.join(__dirname,"config/webpack.config.dev.js"));
 
 if(devConfigExist){
     console.log("use custom dev config".green);
 }
 
-const config = devConfigExist?require(path.json(__dirname,"config/webpack.config.dev.js")):require('../config/webpack.config.dev');
+const config = devConfigExist?require(path.join(__dirname,"config/webpack.config.dev.js")):require('../config/webpack.config.dev');
 
 
 
 
-const devServerConfigExist = fs.existsSync(path.json(__dirname,"config/webpackDevServer.config"));
+const devServerConfigExist = fs.existsSync(path.join(__dirname,"config/webpackDevServer.config"));
 
 if(devServerConfigExist){
     console.log("use custom devServer config".green);
 }
 
-const createDevServerConfig = devServerConfigExist?require(path.json(__dirname,"config/webpackDevServer.config.js")):require('../config/webpackDevServer.config');
+const createDevServerConfig = devServerConfigExist?require(path.join(__dirname,"config/webpackDevServer.config.js")):require('../config/webpackDevServer.config');
 
 
 
@@ -105,7 +105,7 @@ if (process.env.HOST) {
 
 // We require that you explictly set browsers and do not fall back to
 // browserslist defaults.
-const { checkBrowsers } = require('react-dev-utils/browsersHelper');
+const { checkBrowsers } = require('./utils/browsersHelper');
 checkBrowsers(paths.appPath)
   .then(() => {
     // We attempt to use the default port but if it is busy, we offer the user to
