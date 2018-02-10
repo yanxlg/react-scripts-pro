@@ -38,13 +38,13 @@ const webpack = require('webpack');
 //支持自定义prod config
 
 
-const prodConfigExist = fs.existsSync(path.join(__dirname,"config/webpack.config.prod.js"));
+const prodConfigExist = fs.existsSync(path.join(__dirname,"/config/webpack.config.prod.js"));
 
 if(prodConfigExist){
     console.log("use custom prod config".green);
 }
 
-const config = prodConfigExist?require(path.join(__dirname,"config/webpack.config.prod.js")):require('../config/webpack.config.prod');
+const config = prodConfigExist?require(path.join(__dirname,"/config/webpack.config.prod.js")):require('../config/webpack.config.prod');
 
 
 
@@ -54,7 +54,7 @@ const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
 const printHostingInstructions = require('react-dev-utils/printHostingInstructions');
 const FileSizeReporter = require('react-dev-utils/FileSizeReporter');
 const printBuildError = require('react-dev-utils/printBuildError');
-const { printBrowsers } = require('react-dev-utils/browsersHelper');
+const { printBrowsers } = require('./utils/browsersHelper');
 
 const measureFileSizesBeforeBuild =
   FileSizeReporter.measureFileSizesBeforeBuild;
@@ -72,7 +72,7 @@ if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
 
 // We require that you explictly set browsers and do not fall back to
 // browserslist defaults.
-const { checkBrowsers } = require('react-dev-utils/browsersHelper');
+const { checkBrowsers } = require('./utils/browsersHelper');
 checkBrowsers(paths.appPath)
   .then(() => {
     // First, read the current file sizes in build directory.

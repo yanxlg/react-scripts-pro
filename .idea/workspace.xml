@@ -2,380 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="846ffabb-2bd0-4a5d-adf1-98699d28051a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/clean-css.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/sass-import-json.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/set-prototype-of/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/set-prototype-of/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/set-prototype-of/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/some.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/to-array.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/unserialize.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/valid-callable.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/valid-object.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/valid-value.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/validate-array-like-object.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/validate-array-like.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/validate-stringifiable-value.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/object/validate-stringifiable.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/is-sticky.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/is-unicode.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/match/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/match/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/match/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/match/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/replace/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/replace/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/replace/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/replace/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/search/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/search/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/search/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/search/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/split/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/split/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/split/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/split/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/sticky/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/sticky/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/unicode/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/#/unicode/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/escape.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/is-reg-exp.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/reg-exp/valid-reg-exp.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/@@iterator/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/@@iterator/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/@@iterator/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/@@iterator/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/at.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/camel-to-hyphen.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/capitalize.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/case-insensitive-compare.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/code-point-at/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/code-point-at/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/code-point-at/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/code-point-at/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/contains/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/contains/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/contains/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/contains/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/count.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/ends-with/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/ends-with/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/ends-with/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/ends-with/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/hyphen-to-camel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/indent.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/last.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/normalize/_data.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/normalize/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/normalize/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/normalize/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/normalize/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/pad.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/plain-replace-all.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/plain-replace.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/repeat/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/repeat/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/repeat/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/repeat/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/starts-with/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/starts-with/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/starts-with/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/starts-with/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/#/uncapitalize.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/format-method.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/from-code-point/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/from-code-point/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/from-code-point/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/from-code-point/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/is-string.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/random-uniq.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/random.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/raw/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/raw/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/raw/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/string/raw/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/.eslintrc.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/__tad.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/@@iterator/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/@@iterator/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/@@iterator/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/@@iterator/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/_compare-by-length.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/binary-search.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/clear.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/compact.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/concat/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/concat/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/concat/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/concat/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/contains.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/copy-within/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/copy-within/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/copy-within/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/copy-within/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/diff.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/e-index-of.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/e-last-index-of.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/entries/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/entries/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/entries/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/entries/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/exclusion.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/fill/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/fill/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/fill/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/fill/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/filter/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/filter/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/filter/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/filter/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/find-index/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/find-index/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/find-index/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/find-index/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/find/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/find/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/find/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/find/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/first-index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/first.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/flatten.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/for-each-right.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/group.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/indexes-of.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/intersection.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/is-copy.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/is-empty.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/is-uniq.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/keys/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/keys/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/keys/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/keys/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/last-index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/last.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/map/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/map/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/map/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/map/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/remove.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/separate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/slice/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/slice/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/slice/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/slice/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/some-right.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/splice/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/splice/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/splice/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/splice/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/uniq.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/values/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/values/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/values/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/#/values/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/__scopes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/_is-extensible.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/_sub-array-dummy-safe.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/_sub-array-dummy.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/from/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/from/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/from/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/from/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/generate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/is-plain-array.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/of/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/of/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/of/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/of/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/to-array.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/array/valid-array.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/boolean/is-boolean.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/date/#/copy.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/date/#/days-in-month.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/date/#/floor-day.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/date/#/floor-month.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/date/#/floor-year.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/date/#/format.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/date/ensure-time-value.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/date/is-date.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/date/is-time-value.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/date/valid-date.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/error/#/throw.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/error/custom.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/error/is-error.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/error/valid-error.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/#/compose.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/#/copy.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/#/curry.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/#/lock.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/#/not.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/#/partial.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/#/spread.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/#/to-string-tokens.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/_define-length.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/constant.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/identity.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/invoke.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/is-arguments.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/is-function.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/noop.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/pluck.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/function/valid-function.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/global.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/iterable/for-each.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/iterable/is.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/iterable/validate-object.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/iterable/validate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/json/safe-stringify.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/_pack-ieee754.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/_unpack-ieee754.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/acosh/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/acosh/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/acosh/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/acosh/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/asinh/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/asinh/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/asinh/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/asinh/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/atanh/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/atanh/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/atanh/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/atanh/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/cbrt/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/cbrt/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/cbrt/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/cbrt/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/clz32/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/clz32/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/clz32/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/clz32/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/cosh/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/cosh/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/cosh/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/cosh/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/expm1/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/expm1/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/expm1/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/expm1/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/fround/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/fround/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/fround/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/fround/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/hypot/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/hypot/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/hypot/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/hypot/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/imul/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/imul/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/imul/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/imul/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log10/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log10/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log10/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log10/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log1p/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log1p/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log1p/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log1p/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log2/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log2/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log2/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/log2/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/sign/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/sign/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/sign/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/sign/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/sinh/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/sinh/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/sinh/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/sinh/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/tanh/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/tanh/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/tanh/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/tanh/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/trunc/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/trunc/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/trunc/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/math/trunc/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/#/pad.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/epsilon/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/epsilon/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/epsilon/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-finite/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-finite/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-finite/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-finite/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-integer/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-integer/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-integer/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-integer/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-nan/implement.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-nan/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-nan/is-implemented.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/node_modules/es5-ext/test/number/is-nan/shim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/utils/browsersHelper.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bin/react-scripts-pro.js" afterPath="$PROJECT_DIR$/bin/react-scripts-pro2.js" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.dev.js" afterPath="$PROJECT_DIR$/config/webpack.config.dev.js" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.prod.js" afterPath="$PROJECT_DIR$/config/webpack.config.prod.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/autoprefixer-info" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/autoprefixer-info.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/eslint" afterPath="$PROJECT_DIR$/node_modules/.bin/eslint" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/eslint.cmd" afterPath="$PROJECT_DIR$/node_modules/.bin/eslint.cmd" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jest" afterPath="$PROJECT_DIR$/node_modules/.bin/jest" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jest.cmd" afterPath="$PROJECT_DIR$/node_modules/.bin/jest.cmd" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/svgr" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/svgr.cmd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/webpack" afterPath="$PROJECT_DIR$/node_modules/.bin/webpack" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/webpack-dev-server" afterPath="$PROJECT_DIR$/node_modules/.bin/webpack-dev-server" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/webpack-dev-server.cmd" afterPath="$PROJECT_DIR$/node_modules/.bin/webpack-dev-server.cmd" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/webpack.cmd" afterPath="$PROJECT_DIR$/node_modules/.bin/webpack.cmd" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/04cb3481d2268e0b029a0e46814c2c1d0720a8c8.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/11327eda1405f088ba40ceaffcea19e7e0b6f287.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/26879e4544e53e95876c9eb11f5aeb83a7a7af94.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3b35cc36fd890c16bfde7e2d4ca5ac1406229229.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3cf62bedcaf5c439a1d4e71b4a7aad5f9489118c.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3d91e6e222ddfd566e18c284bce50c274317bed3.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3e616feb8de0662fe4b09250d540dadb7c773b58.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4339e350bd678156bbe1e501193429f197aa0401.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/76d153fefae17604c2b13b7781093337b8165847.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/79a9e076a0ae0135495fc8f1e3b8c71d3d2ef830.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7f5943fc328f11f801a88862542326877f61bd4e.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/7f855d3d933d9cfd630f91473473d2255355a4b7.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/86f4d8a5f218e9909b84a09938724bcd813fb3bf.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8a6b289567faa2c66d2127f69335f46631eef60b.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/92744b7f00837554c67bf48c7452332275a90441.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/991250ecfd2d309e3d0706e9828010f18087b2b9.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9b9a70d61cb1f6168b9cdcf85b21d9e9d47ddfe1.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/9d31516a117333db529d975e20d258fb27705a6e.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/acbaacfc1122de528fa0b037a3ddb1545e792aee.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/dd232d895092cb013187b663c5490dae0af0fdfa.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e5edf1306f282e6f121b16eccf06fa8f98062286.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e721ce2b94772cfda97b579c5121f968e79528e8.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f28835d99689c803551da915232bbe687dd6d4b6.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f4e3170b3530ae036dc99bd324bf4a69e62a8579.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fb50fa7acfec30583cabe8011d2dd9e9490a53c3.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/fd904dac6398f248fddde693638c162144db336c.json.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/uglifyjs-webpack-plugin/content-v2/sha512/9f/c6/210eee11960643d5456d75434df4d8691781d01349b686d9e1407b4184c19e49a24421e90656a55147f9ef56aa17a67dfa858cc02b053b3f76491a574c00" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/uglifyjs-webpack-plugin/index-v5/22/ca/8d3bf96c895e32e4c828370b8a63694f41c84815bae999317a7edd1eb7e1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-jest/README.md" afterPath="$PROJECT_DIR$/node_modules/babel-jest/README.md" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-jest/build/index.js" afterPath="$PROJECT_DIR$/node_modules/babel-jest/build/index.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-jest/package.json" afterPath="$PROJECT_DIR$/node_modules/babel-jest/package.json" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pify/index.js" afterPath="$PROJECT_DIR$/node_modules/pify/index.js" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pify/license" afterPath="$PROJECT_DIR$/node_modules/pify/license" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pify/package.json" afterPath="$PROJECT_DIR$/node_modules/pify/package.json" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pify/readme.md" afterPath="$PROJECT_DIR$/node_modules/pify/readme.md" />
+      <change beforePath="$PROJECT_DIR$/config/paths.js" afterPath="$PROJECT_DIR$/config/paths.js" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change beforePath="$PROJECT_DIR$/scripts/build.js" afterPath="$PROJECT_DIR$/scripts/build.js" />
       <change beforePath="$PROJECT_DIR$/scripts/start.js" afterPath="$PROJECT_DIR$/scripts/start.js" />
-      <change beforePath="$PROJECT_DIR$/yarn-error.log" afterPath="$PROJECT_DIR$/yarn-error.log" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -392,9 +22,28 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="61" column="24" lean-forward="false" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+            <state relative-caret-position="380">
+              <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/build.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+              <folding>
+                <marker date="1518277831339" expanded="true" signature="651:664" ph="{&quot;throw&quot;: err...}" />
+                <marker date="1518277831339" expanded="true" signature="2640:2815" ph="{...}" />
+                <marker date="1518277831339" expanded="true" signature="2851:2966" ph="{...}" />
+                <marker date="1518277831339" expanded="true" signature="3187:3207" ph="{...}" />
+                <marker date="1518277831339" expanded="true" signature="4507:4520" ph="{...}" />
+                <marker date="1518277831339" expanded="true" signature="4848:4862" ph="{...}" />
+                <marker date="1518277831339" expanded="true" signature="4883:5006" ph="{...}" />
+                <marker date="1518277831339" expanded="true" signature="6004:6047" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -412,31 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="react-scripts-pro2.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/react-scripts-pro2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="start.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="start.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/start.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="107" column="60" lean-forward="false" selection-start-line="107" selection-start-column="60" selection-end-line="107" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="browsersHelper.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/utils/browsersHelper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="351">
+              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -446,7 +75,17 @@
         <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="44" selection-end-column="6" />
+              <caret line="34" column="3" lean-forward="false" selection-start-line="34" selection-start-column="3" selection-end-line="44" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paths.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/paths.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -456,17 +95,17 @@
         <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="332">
-              <caret line="443" column="35" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="527" selection-end-column="0" />
+              <caret line="443" column="35" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="527" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -509,9 +148,9 @@
       <find>name</find>
       <find>find-pkg</find>
       <find>brow</find>
+      <find>postcss</find>
       <find>pkg-up</find>
       <find>entry</find>
-      <find>postcss</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -522,13 +161,14 @@
       <list>
         <option value="$PROJECT_DIR$/template/public/index.html" />
         <option value="$PROJECT_DIR$/config/polyfills.js" />
-        <option value="$PROJECT_DIR$/scripts/build.js" />
-        <option value="$PROJECT_DIR$/scripts/start.js" />
         <option value="$PROJECT_DIR$/config/sass-import-json.js" />
         <option value="$PROJECT_DIR$/config/clean-css.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/config/webpack.config.dev.js" />
         <option value="$PROJECT_DIR$/config/webpack.config.prod.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/config/paths.js" />
+        <option value="$PROJECT_DIR$/scripts/build.js" />
+        <option value="$PROJECT_DIR$/scripts/start.js" />
       </list>
     </option>
   </component>
@@ -587,6 +227,17 @@
               <item name="react-scripts-pro" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="react-scripts-pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-scripts-pro" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-scripts-pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-scripts-pro" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -636,12 +287,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518256482118</updated>
-      <workItem from="1518256483634" duration="9210000" />
+      <workItem from="1518256483634" duration="11456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9210000" />
+    <option name="totallyTimeSpent" value="11456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -724,44 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/build.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
-          <folding>
-            <marker date="1518258910130" expanded="true" signature="26:208" ph="/** Copyright (c) 2015-present, Facebook, Inc. ...*/" />
-            <marker date="1518258910130" expanded="true" signature="403:610" ph="//..." />
-            <marker date="1518258910130" expanded="true" signature="651:664" ph="{&quot;throw&quot;: err...}" />
-            <marker date="1518258910130" expanded="true" signature="739:819" ph="//..." />
-            <marker date="1518258910130" expanded="true" signature="933:959" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="1251:1303" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="2422:2444" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="2446:2541" ph="//..." />
-            <marker date="1518258910130" expanded="true" signature="2654:2829" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="2660:2774" ph="//..." />
-            <marker date="1518258910130" expanded="true" signature="2865:2980" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="2871:2973" ph="//..." />
-            <marker date="1518258910130" expanded="true" signature="3201:3221" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="3230:3671" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="3677:3748" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="4388:4500" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="4521:4534" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="4551:4590" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="4723:5939" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="4862:4876" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="4897:5020" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="4914:4951" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="5056:5352" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="5066:5190" ph="//..." />
-            <marker date="1518258910130" expanded="true" signature="5231:5280" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="5533:5811" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="5833:5921" ph="{&quot;stats&quot;: stats...}" />
-            <marker date="1518258910130" expanded="true" signature="5969:6094" ph="{...}" />
-            <marker date="1518258910130" expanded="true" signature="6018:6061" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/react-scripts-pro2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -774,14 +387,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/start.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="107" column="60" lean-forward="false" selection-start-line="107" selection-start-column="60" selection-end-line="107" selection-end-column="60" />
           <folding />
         </state>
       </provider>
@@ -815,26 +420,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="61" column="24" lean-forward="false" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="44" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
-          <caret line="443" column="35" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="527" selection-end-column="0" />
+          <caret line="443" column="35" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="527" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -842,7 +431,56 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/paths.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="34" column="3" lean-forward="false" selection-start-line="34" selection-start-column="3" selection-end-line="44" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding>
+            <marker date="1518277831339" expanded="true" signature="651:664" ph="{&quot;throw&quot;: err...}" />
+            <marker date="1518277831339" expanded="true" signature="2640:2815" ph="{...}" />
+            <marker date="1518277831339" expanded="true" signature="2851:2966" ph="{...}" />
+            <marker date="1518277831339" expanded="true" signature="3187:3207" ph="{...}" />
+            <marker date="1518277831339" expanded="true" signature="4507:4520" ph="{...}" />
+            <marker date="1518277831339" expanded="true" signature="4848:4862" ph="{...}" />
+            <marker date="1518277831339" expanded="true" signature="4883:5006" ph="{...}" />
+            <marker date="1518277831339" expanded="true" signature="6004:6047" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/start.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>

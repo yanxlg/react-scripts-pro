@@ -28,13 +28,13 @@ const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 
 //判断配置文件是否存在，如果存在则从配置文件读取，否则使用默认
 
-const pathsConfigExist = fs.existsSync(resolveApp("config/paths.config"));
+const pathsConfigExist = fs.existsSync(path.join(__dirname,"/config/paths.config"));
 
 if(pathsConfigExist){
   console.log("use custom config".green);
 }
 
-const pathsConfig = pathsConfigExist?require(resolveApp("/config/paths.config")):null;
+const pathsConfig = pathsConfigExist?require(path.join(__dirname,"/config/paths.config")):null;
 
 
 

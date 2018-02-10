@@ -1,5 +1,5 @@
 {
-  "name": "react-scripts-pro5",
+  "name": "react-scripts-pro6",
   "version": "1.0.0",
   "description": "Configuration and scripts for Create React App.",
   "repository": "facebookincubator/create-react-app",
@@ -18,7 +18,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts-pro5": "./bin/react-scripts-pro2.js"
+    "react-scripts-pro6": "./bin/react-scripts-pro2.js"
   },
   "dependencies": {
     "autoprefixer": "7.1.6",
