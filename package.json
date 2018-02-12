@@ -1,5 +1,5 @@
 {
-  "name": "react-scripts-pro7",
+  "name": "react-scripts-pro8",
   "version": "1.0.0",
   "description": "Configuration and scripts for Create React App.",
   "repository": "facebookincubator/create-react-app",
@@ -18,7 +18,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts-pro7": "./bin/react-scripts-pro2.js"
+    "react-scripts-pro8": "./bin/react-scripts-pro2.js"
   },
   "dependencies": {
     "autoprefixer": "7.1.6",

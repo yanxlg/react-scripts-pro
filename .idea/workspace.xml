@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="846ffabb-2bd0-4a5d-adf1-98699d28051a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/config/webpack.config.dev.js" afterPath="$PROJECT_DIR$/config/webpack.config.dev.js" />
       <change beforePath="$PROJECT_DIR$/config/webpack.config.prod.js" afterPath="$PROJECT_DIR$/config/webpack.config.prod.js" />
-      <change beforePath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/scripts/build.js" afterPath="$PROJECT_DIR$/scripts/build.js" />
-      <change beforePath="$PROJECT_DIR$/scripts/start.js" afterPath="$PROJECT_DIR$/scripts/start.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="380">
+              <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -64,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="start.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/start.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="429">
@@ -97,8 +93,8 @@
       <file leaf-file-name="webpack.config.dev.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="284" column="11" lean-forward="false" selection-start-line="284" selection-start-column="11" selection-end-line="284" selection-end-column="11" />
+            <state relative-caret-position="266">
+              <caret line="278" column="58" lean-forward="false" selection-start-line="278" selection-start-column="58" selection-end-line="278" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -107,16 +103,16 @@
       <file leaf-file-name="webpack.config.prod.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="161">
+              <caret line="514" column="51" lean-forward="true" selection-start-line="514" selection-start-column="51" selection-end-line="514" selection-end-column="51" />
               <folding>
-                <marker date="1518362689834" expanded="true" signature="10167:10263" ph="..." />
-                <marker date="1518362689834" expanded="true" signature="10562:12486" ph="..." />
-                <marker date="1518362689834" expanded="true" signature="11021:11078" ph="{...}" />
-                <marker date="1518362689834" expanded="true" signature="11240:11402" ph="{...}" />
-                <marker date="1518362689834" expanded="true" signature="11893:12252" ph="{...}" />
-                <marker date="1518362689834" expanded="true" signature="19322:19425" ph="..." />
-                <marker date="1518362689834" expanded="true" signature="19360:19425" ph="{&quot;title&quot;: paths.webName...}" />
+                <marker date="1518417326524" expanded="true" signature="10419:10515" ph="..." />
+                <marker date="1518417326524" expanded="true" signature="10814:12738" ph="..." />
+                <marker date="1518417326524" expanded="true" signature="11273:11330" ph="{...}" />
+                <marker date="1518417326524" expanded="true" signature="11492:11654" ph="{...}" />
+                <marker date="1518417326524" expanded="true" signature="12145:12504" ph="{...}" />
+                <marker date="1518417326524" expanded="true" signature="19580:19683" ph="..." />
+                <marker date="1518417326524" expanded="true" signature="19618:19683" ph="{&quot;title&quot;: paths.webName...}" />
               </folding>
             </state>
           </provider>
@@ -159,11 +155,11 @@
       <find>postcss</find>
       <find>static</find>
       <find>SWPrecacheWebpackPlugin</find>
-      <find>HtmlWebpackPlugin</find>
       <find>brow</find>
       <find>pkg-up</find>
-      <find>entry</find>
       <find>copyPublicFolder</find>
+      <find>entry</find>
+      <find>HtmlWebpackPlugin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,11 +175,11 @@
         <option value="$PROJECT_DIR$/config/paths.js" />
         <option value="$PROJECT_DIR$/node_modules/html-webpack-plugin/index.js" />
         <option value="$PROJECT_DIR$/scripts/build.js" />
-        <option value="$PROJECT_DIR$/config/webpack.config.prod.js" />
         <option value="$PROJECT_DIR$/config/webpackDevServer.config.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/config/webpack.config.dev.js" />
         <option value="$PROJECT_DIR$/scripts/start.js" />
+        <option value="$PROJECT_DIR$/config/webpack.config.dev.js" />
+        <option value="$PROJECT_DIR$/config/webpack.config.prod.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -296,12 +292,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518256482118</updated>
-      <workItem from="1518256483634" duration="22898000" />
+      <workItem from="1518256483634" duration="24170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22898000" />
+    <option name="totallyTimeSpent" value="24170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -312,7 +308,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938644" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32938644" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Compute Code Lines" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -445,22 +441,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <marker date="1518362689834" expanded="true" signature="10167:10263" ph="..." />
-            <marker date="1518362689834" expanded="true" signature="10562:12486" ph="..." />
-            <marker date="1518362689834" expanded="true" signature="11021:11078" ph="{...}" />
-            <marker date="1518362689834" expanded="true" signature="11240:11402" ph="{...}" />
-            <marker date="1518362689834" expanded="true" signature="11893:12252" ph="{...}" />
-            <marker date="1518362689834" expanded="true" signature="19322:19425" ph="..." />
-            <marker date="1518362689834" expanded="true" signature="19360:19425" ph="{&quot;title&quot;: paths.webName...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-dev-utils/WebpackDevServerUtils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -502,26 +482,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/scripts/start.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="429">
+          <caret line="146" column="49" lean-forward="true" selection-start-line="146" selection-start-column="49" selection-end-line="146" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="284" column="11" lean-forward="false" selection-start-line="284" selection-start-column="11" selection-end-line="284" selection-end-column="11" />
+        <state relative-caret-position="266">
+          <caret line="278" column="58" lean-forward="false" selection-start-line="278" selection-start-column="58" selection-end-line="278" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/start.js">
+    <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="146" column="49" lean-forward="true" selection-start-line="146" selection-start-column="49" selection-end-line="146" selection-end-column="49" />
+        <state relative-caret-position="161">
+          <caret line="514" column="51" lean-forward="true" selection-start-line="514" selection-start-column="51" selection-end-line="514" selection-end-column="51" />
+          <folding>
+            <marker date="1518417326524" expanded="true" signature="10419:10515" ph="..." />
+            <marker date="1518417326524" expanded="true" signature="10814:12738" ph="..." />
+            <marker date="1518417326524" expanded="true" signature="11273:11330" ph="{...}" />
+            <marker date="1518417326524" expanded="true" signature="11492:11654" ph="{...}" />
+            <marker date="1518417326524" expanded="true" signature="12145:12504" ph="{...}" />
+            <marker date="1518417326524" expanded="true" signature="19580:19683" ph="..." />
+            <marker date="1518417326524" expanded="true" signature="19618:19683" ph="{&quot;title&quot;: paths.webName...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding />
         </state>
       </provider>

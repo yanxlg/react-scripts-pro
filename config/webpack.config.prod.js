@@ -217,14 +217,21 @@ module.exports = {
             loader: require.resolve('url-loader'),
             options: {
               limit: 10000,
-              name: `${assertDir}/media/[name].[hash:8].[ext]`,
+              name: `${assertDir}/media/[ext]/[name].[hash:8].[ext]`,
             },
           },
+            {
+                test: /\S*icon\S*.(svg|eot|ttf|woff)$/,
+                loader: 'file-loader',
+                options: {
+                    name: `${assertDir}/icons/[name].[hash:8].[ext]`,
+                },
+            },
             {
                 test: /.(svg|eot|ttf|woff)$/,
                 loader: 'file-loader',
                 options: {
-                    name: `${assertDir}/icons/[name].[hash:8].[ext]`,
+                    name: `${assertDir}/media/[ext]/[name].[hash:8].[ext]`,
                 },
             },
             {
@@ -430,7 +437,7 @@ module.exports = {
             // by webpacks internal loaders.
             exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/],
             options: {
-              name: `${assertDir}/media/[name].[hash:8].[ext]`,
+              name: `${assertDir}/media/[ext]/[name].[hash:8].[ext]`,
             },
           },
           // ** STOP ** Are you adding a new loader?
