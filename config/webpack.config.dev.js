@@ -91,7 +91,7 @@ module.exports = {
     module: {
         strictExportPresence: true,
         rules: [
-            {
+          /*  {
                 test: /\.(js|jsx|mjs)$/,
                 enforce: 'pre',
                 use: [
@@ -111,7 +111,7 @@ module.exports = {
                     },
                 ],
                 include: paths.appSrc,
-            },
+            },*/
             /*   {
                    test: /\.(ts|tsx)$/,
                    loader: require.resolve('tslint-loader'),
