@@ -22,12 +22,34 @@ const paths = require('./paths');
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const CleanPlugin = require('./clean-css');
 const importJson =  require('./sass-import-json');
 
+
+
+
+const projectConfig=require(paths.appPackageJson);
+const proj_name=projectConfig.name;
+
+const hashCode = function(str){
+    let hash = 0;
+    if (str.length === 0) return hash;
+    for (let i = 0; i < str.length; i++) {
+        const char = str.charCodeAt(i);
+        hash = ((hash<<5)-hash)+char;
+        hash = hash & hash; // Convert to 32bit integer
+    }
+    return hash;
+};
+
+const assertDir=`static_${hashCode(proj_name)}`;
+
+
+
 const publicPath = '/';
-const publicUrl = '';
+const publicUrl = '/'+assertDir;
 const env = getClientEnvironment(publicUrl);
 
 module.exports = {
@@ -45,8 +67,8 @@ module.exports = {
     },
     output: {
         pathinfo: true,
-        filename: 'business/[name]_[hash:8].js',
-        chunkFilename: 'business/[name].chunk.js',
+        filename: `${assertDir}/business/[name]_[hash:8].js`,
+        chunkFilename: `${assertDir}/business/[name].chunk.js`,
         publicPath: publicPath,
         devtoolModuleFilenameTemplate: info =>
             path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
@@ -103,14 +125,14 @@ module.exports = {
                         loader: require.resolve('url-loader'),
                         options: {
                             limit: 10000,
-                            name: 'static/media/[name].[hash:8].[ext]',
+                            name: `${assertDir}/media/[name].[hash:8].[ext]`,
                         },
                     },
                     {
                         test: /.(svg|eot|ttf|woff)$/,
                         loader: 'file-loader',
                         options: {
-                            name: 'static/icons/[name].[hash:8].[ext]',
+                            name: `${assertDir}/icons/[name].[hash:8].[ext]`,
                         },
                     },
                     {
@@ -247,7 +269,7 @@ module.exports = {
                         exclude: [/\.(js|jsx|mjs)$/, /\.html$/, /\.json$/],
                         loader: require.resolve('file-loader'),
                         options: {
-                            name: 'static/media/[name].[hash:8].[ext]',
+                            name: `${assertDir}/media/[name].[hash:8].[ext]`,
                         },
                     },
                 ],
@@ -255,6 +277,12 @@ module.exports = {
         ],
     },
     plugins: [
+        new CopyWebpackPlugin([{
+            from:paths.appPublic,
+            to:path.join(assertDir),
+        }], {
+            ignore: [ '*.html']
+        }),
         new CleanPlugin(),
         new InterpolateHtmlPlugin(env.raw),
         new HtmlWebpackPlugin({

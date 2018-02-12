@@ -1,5 +1,5 @@
 {
-  "name": "react-scripts-pro6",
+  "name": "react-scripts-pro7",
   "version": "1.0.0",
   "description": "Configuration and scripts for Create React App.",
   "repository": "facebookincubator/create-react-app",
@@ -18,7 +18,7 @@
     "utils"
   ],
   "bin": {
-    "react-scripts-pro6": "./bin/react-scripts-pro2.js"
+    "react-scripts-pro7": "./bin/react-scripts-pro2.js"
   },
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -68,7 +68,8 @@
     "sass-loader": "^6.0.6",
     "postcss": "^6.0.17",
     "babel-polyfill": "^6.26.0",
-    "axios":"^0.17.1"
+    "axios":"^0.17.1",
+    "resolve-url-loader": "^2.2.1"
   },
   "devDependencies": {
     "react": "^16.0.0",
