@@ -1,6 +1,6 @@
 {
     "name": "react-scripts-pro",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "Configuration and scripts for Create React App.",
     "repository": "facebookincubator/create-react-app",
     "license": "MIT",
@@ -70,7 +70,8 @@
         "babel-polyfill": "^6.26.0",
         "axios": "^0.17.1",
         "resolve-url-loader": "^2.2.1",
-        "copy-webpack-plugin": "^4.4.1"
+        "copy-webpack-plugin": "^4.4.1",
+        "clean-css":"^4.1.9"
     },
     "devDependencies": {
         "react": "^16.0.0",

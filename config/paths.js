@@ -28,13 +28,13 @@ const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 
 //判断配置文件是否存在，如果存在则从配置文件读取，否则使用默认
 
-const pathsConfigExist = fs.existsSync(path.join(__dirname,"/config/paths.config"));
+const pathsConfigExist = fs.existsSync(path.join(appDirectory,"/config/paths.config.json"));
 
 if(pathsConfigExist){
   console.log("use custom config".green);
 }
 
-const pathsConfig = pathsConfigExist?require(path.join(__dirname,"/config/paths.config")):null;
+const pathsConfig = pathsConfigExist?require(path.join(appDirectory,"/config/paths.config.json")):{};
 
 
 
@@ -83,12 +83,12 @@ function getServedPath(appPackageJson) {
 
 // config after eject: we're in ./config/
 module.exports = {
-  dotenv: resolveApp(pathsConfig?pathsConfig.dotenv:'.env'),
-  appPath: resolveApp(pathsConfig?pathsConfig.appPath:'.'),
-  appBuild: resolveApp(pathsConfig?pathsConfig.appBuild:'build'),
-  appPublic: resolveApp(pathsConfig?pathsConfig.appPublic:'public'),
-  appHtml: resolveApp(pathsConfig?pathsConfig.appHtml:'public/index.html'),
-  appIndexJs: resolveApp(pathsConfig?pathsConfig.appIndexJs:'src/index.js'),
+  dotenv: resolveApp(pathsConfig.dotenv||'.env'),
+  appPath: resolveApp(pathsConfig.appPath||'.'),
+  appBuild: resolveApp(pathsConfig.appBuild||'build'),
+  appPublic: resolveApp(pathsConfig.appPublic||'public'),
+  appHtml: resolveApp(pathsConfig.appHtml||'public/index.html'),
+  appIndexJs: resolveApp(pathsConfig.appIndexJs||'src/index.js'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   yarnLockFile: resolveApp('yarn.lock'),
@@ -105,12 +105,12 @@ const resolveOwn = relativePath => path.resolve(__dirname, '..', relativePath);
 
 // config before eject: we're in ./node_modules/react-scripts/config/
 module.exports = {
-  dotenv: resolveApp(pathsConfig?pathsConfig.dotenv:'.env'),
-  appPath: resolveApp(pathsConfig?pathsConfig.appPath:'.'),
-  appBuild: resolveApp(pathsConfig?pathsConfig.appBuild:'build'),
-  appPublic: resolveApp(pathsConfig?pathsConfig.appPublic:'public'),
-  appHtml: resolveApp(pathsConfig?pathsConfig.appHtml:'public/index.html'),
-  appIndexJs: resolveApp(pathsConfig?pathsConfig.appIndexJs:'src/index.js'),
+  dotenv: resolveApp(pathsConfig.dotenv||'.env'),
+  appPath: resolveApp(pathsConfig.appPath||'.'),
+  appBuild: resolveApp(pathsConfig.appBuild||'build'),
+  appPublic: resolveApp(pathsConfig.appPublic||'public'),
+  appHtml: resolveApp(pathsConfig.appHtml||'public/index.html'),
+  appIndexJs: resolveApp(pathsConfig.appIndexJs||'src/index.js'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   yarnLockFile: resolveApp('yarn.lock'),
@@ -119,7 +119,7 @@ module.exports = {
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')),
   // These properties only exist before ejecting:
-  ownPath: resolveOwn(pathsConfig?pathsConfig.ownPath:'.'),
+  ownPath: resolveOwn(pathsConfig.ownPath||'.'),
   ownNodeModules: resolveOwn('node_modules'), // This is empty on npm 3
 };
 
@@ -131,12 +131,12 @@ checkForMonorepo = !useTemplate;
 
 if (useTemplate) {
   module.exports = {
-    dotenv: resolveOwn(`template/${pathsConfig?pathsConfig.dotenv:".env"}`),
-    appPath: resolveApp(pathsConfig?pathsConfig.appPath:'.'),
-    appBuild: resolveOwn(`../../${pathsConfig?pathsConfig.appBuild:"build"}`),
-    appPublic: resolveOwn(`template/${pathsConfig?pathsConfig.appPublic:"public"}`),
-    appHtml: resolveOwn(`template/${pathsConfig?pathsConfig.appHtml:"public/index.html"}`),
-    appIndexJs: resolveOwn(`template/${pathsConfig?pathsConfig.appIndexJs:"src/index.js"}`),
+    dotenv: resolveOwn(`template/${pathsConfig.dotenv||".env"}`),
+    appPath: resolveApp(pathsConfig.appPath||'.'),
+    appBuild: resolveOwn(`../../${pathsConfig.appBuild||"build"}`),
+    appPublic: resolveOwn(`template/${pathsConfig.appPublic||"public"}`),
+    appHtml: resolveOwn(`template/${pathsConfig.appHtml||"public/index.html"}`),
+    appIndexJs: resolveOwn(`template/${pathsConfig.appIndexJs||"src/index.js"}`),
     appPackageJson: resolveOwn('package.json'),
     appSrc: resolveOwn('template/src'),
     yarnLockFile: resolveOwn('template/yarn.lock'),
@@ -145,7 +145,7 @@ if (useTemplate) {
     publicUrl: getPublicUrl(resolveOwn('package.json')),
     servedPath: getServedPath(resolveOwn('package.json')),
     // These properties only exist before ejecting:
-    ownPath: resolveOwn(pathsConfig?pathsConfig.ownPath:'.'),
+    ownPath: resolveOwn(pathsConfig.ownPath||'.'),
     ownNodeModules: resolveOwn('node_modules'),
   };
 }

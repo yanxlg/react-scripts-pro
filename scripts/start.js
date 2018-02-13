@@ -47,29 +47,29 @@ const paths = require('../config/paths');
 const path = require('path');
 
 
-
+const appDirectory = fs.realpathSync(process.cwd());
 
 //支持外部配置文件
 
 
-const devConfigExist = fs.existsSync(path.join(__dirname,"/config/webpack.config.dev.js"));
+const devConfigExist = fs.existsSync(path.join(appDirectory,"/config/webpack.config.dev.js"));
 
 if(devConfigExist){
     console.log("use custom dev config".green);
 }
 
-const config = devConfigExist?require(path.join(__dirname,"/config/webpack.config.dev.js")):require('../config/webpack.config.dev');
+const config = devConfigExist?require(path.join(appDirectory,"/config/webpack.config.dev.js")):require('../config/webpack.config.dev.js');
 
 
 
 
-const devServerConfigExist = fs.existsSync(path.join(__dirname,"/config/webpackDevServer.config"));
+const devServerConfigExist = fs.existsSync(path.join(appDirectory,"/config/webpackDevServer.config.js"));
 
 if(devServerConfigExist){
     console.log("use custom devServer config".green);
 }
 
-const createDevServerConfig = devServerConfigExist?require(path.join(__dirname,"config/webpackDevServer.config.js")):require('../config/webpackDevServer.config');
+const createDevServerConfig = devServerConfigExist?require(path.join(__dirname,"config/webpackDevServer.config.js")):require('../config/webpackDevServer.config.js');
 
 
 
