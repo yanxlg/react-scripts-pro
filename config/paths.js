@@ -96,6 +96,7 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')),
+  webName:pathsConfig.webName||"react",
 };
 
 let checkForMonorepo = true;
@@ -121,6 +122,7 @@ module.exports = {
   // These properties only exist before ejecting:
   ownPath: resolveOwn(pathsConfig.ownPath||'.'),
   ownNodeModules: resolveOwn('node_modules'), // This is empty on npm 3
+  webName:pathsConfig.webName||"react",
 };
 
 // detect if template should be used, ie. when cwd is react-scripts itself
@@ -147,6 +149,7 @@ if (useTemplate) {
     // These properties only exist before ejecting:
     ownPath: resolveOwn(pathsConfig.ownPath||'.'),
     ownNodeModules: resolveOwn('node_modules'),
+    webName:pathsConfig.webName||"react",
   };
 }
 // @remove-on-eject-end
