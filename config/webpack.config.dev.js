@@ -157,12 +157,6 @@ module.exports = {
                     {
                         test: /\.(js|jsx|mjs)$/,
                         loader: require.resolve('babel-loader'),
-                        options: {
-                            // @remove-on-eject-begin
-                            babelrc: false,
-                            presets: [require.resolve('babel-preset-react-app')],
-                            cacheDirectory: true,
-                        },
                     },
                     {
                         test: /\.css$/,
@@ -292,6 +286,7 @@ module.exports = {
         new CleanPlugin(),
         new InterpolateHtmlPlugin(env.raw),
         new HtmlWebpackPlugin({
+            title: paths.webName,
             inject: true,
             template: paths.appHtml,
             chunks:["bundle","polyfill","react","react-dom","axios"],
