@@ -44,7 +44,7 @@ const hashCode = function(str){
     return hash;
 };
 
-const assertDir=`static_${hashCode(proj_name)}`;
+const assertDir=`static${hashCode(proj_name).toString().replace(/-/g,"_")}`;
 
 
 
@@ -55,12 +55,10 @@ const env = getClientEnvironment(publicUrl);
 module.exports = {
     devtool: 'cheap-module-source-map',
     entry: {
-        "polyfill":["babel-polyfill"],
-        'react':["react"],
-        'react-dom':['react-dom'],
+        "polyfill":["babel-polyfill",require.resolve('./polyfills')],
+        'react':["react",'react-dom'],
         'axios':['axios'],
         "bundle":[
-            require.resolve('./polyfills'),
             require.resolve('react-dev-utils/webpackHotDevClient'),
             paths.appIndexJs
         ]
@@ -91,27 +89,27 @@ module.exports = {
     module: {
         strictExportPresence: true,
         rules: [
-          /*  {
-                test: /\.(js|jsx|mjs)$/,
-                enforce: 'pre',
-                use: [
-                    {
-                        options: {
-                            formatter: eslintFormatter,
-                            eslintPath: require.resolve('eslint'),
-                            // @remove-on-eject-begin
-                            baseConfig: {
-                                extends: [require.resolve('eslint-config-react-app')],
-                            },
-                            ignore: false,
-                            useEslintrc: false,
-                            // @remove-on-eject-end
-                        },
-                        loader: require.resolve('eslint-loader'),
-                    },
-                ],
-                include: paths.appSrc,
-            },*/
+            /*  {
+                  test: /\.(js|jsx|mjs)$/,
+                  enforce: 'pre',
+                  use: [
+                      {
+                          options: {
+                              formatter: eslintFormatter,
+                              eslintPath: require.resolve('eslint'),
+                              // @remove-on-eject-begin
+                              baseConfig: {
+                                  extends: [require.resolve('eslint-config-react-app')],
+                              },
+                              ignore: false,
+                              useEslintrc: false,
+                              // @remove-on-eject-end
+                          },
+                          loader: require.resolve('eslint-loader'),
+                      },
+                  ],
+                  include: paths.appSrc,
+              },*/
             /*   {
                    test: /\.(ts|tsx)$/,
                    loader: require.resolve('tslint-loader'),
@@ -275,6 +273,11 @@ module.exports = {
         ],
     },
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            names:["react","axios","polyfill"],
+            filename:`${assertDir}/bundle/[name].[hash:8].js`,
+            minChunks: Infinity
+        }),
         new CopyWebpackPlugin([{
             from:paths.appPublic,
             to:path.join(assertDir),
@@ -287,9 +290,9 @@ module.exports = {
             title: paths.webName,
             inject: true,
             template: paths.appHtml,
-            chunks:["bundle","polyfill","react","react-dom","axios"],
+            chunks:["bundle","polyfill","react","axios"],
             chunksSortMode:function(a,b) {
-                let index={"polyfill":1,"react":2,"react-dom":3,"axios":4,"bundle":5},
+                let index={"polyfill":1,"react":2,"axios":3,"bundle":4},
                     aI=index[a.origins[0].name],
                     bI=index[b.origins[0].name];
                 return aI&&bI?aI-bI:-1;

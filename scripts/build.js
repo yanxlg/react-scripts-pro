@@ -200,7 +200,7 @@ function copyPublicFolder() {
         return hash;
     };
     
-    const assertDir=`static_${hashCode(proj_name)}`;
+    const assertDir=`static${hashCode(proj_name).toString().replace(/-/g,"_")}`;
     
     
     fs.copySync(paths.appPublic, path.join(paths.appBuild,assertDir), {
