@@ -168,6 +168,7 @@ module.exports = {
                                 loader: require.resolve('postcss-loader'),
                                 options: {
                                     ident: 'postcss',
+                                    sourceMap: true,
                                     plugins: () => [
                                         require('postcss-flexbugs-fixes'),
                                         autoprefixer({
@@ -243,6 +244,7 @@ module.exports = {
                             {
                                 loader: require.resolve('postcss-loader'),
                                 options: {
+                                    sourceMap: true,
                                     ident: 'postcss',
                                     plugins: () => [
                                         require('postcss-flexbugs-fixes'),
