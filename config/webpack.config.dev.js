@@ -144,10 +144,6 @@ module.exports = {
                     },
                     {
                         test: /\.(ts|tsx)$/,
-                        include: [
-                            paths.appSrc,
-                            path.resolve("./node_modules"),
-                        ],
                         use:[{
                             loader: 'babel-loader'
                         },{
