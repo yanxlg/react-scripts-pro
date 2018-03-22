@@ -1,11 +1,11 @@
 Arguments: 
-  D:\Node\setup\node.exe D:\yarn\setup\bin\yarn.js publish
+  D:\Node\setup\node.exe D:\Node\modules\node_modules\yarn\bin\yarn.js publish
 
 PATH: 
-  C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\SVN\setup\bin;D:\Node\modules;D:\Git\setup\Git\cmd;D:\python\setup\;D:\python\setup\Scripts\;D:\tomcat\setup\bin;D:\tomcat\setup\lib;D:\jdk\setup\bin;D:\jdk\setup\jre\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Node\setup\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\CodyyMeeting\CodyyFilter\x64;C:\CodyyMeeting\CodyyFilter\x86;D:\nginx\nginx-1.13.8;D:\yarn\setup\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\严贤良\AppData\Local\Microsoft\WindowsApps;C:\Users\严贤良\AppData\Roaming\npm;D:\VSCode\setup\Microsoft VS Code\bin;D:\fiddler\setup\Fiddler;C:\Users\严贤良\AppData\Local\Yarn\bin;C:\Users\严贤良\AppData\Local\GitHubDesktop\bin
+  C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\SVN\setup\bin;D:\Node\modules;D:\Git\setup\Git\cmd;D:\python\setup\;D:\python\setup\Scripts\;D:\tomcat\setup\bin;D:\tomcat\setup\lib;D:\jdk\setup\bin;D:\jdk\setup\jre\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Node\setup\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\nginx\nginx-1.13.8;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\CodyyMeeting\CodyyFilter\x64;C:\CodyyMeeting\CodyyFilter\x86;C:\Users\严贤良\AppData\Local\Microsoft\WindowsApps;C:\Users\严贤良\AppData\Roaming\npm;D:\VSCode\setup\Microsoft VS Code\bin;D:\fiddler\setup\Fiddler;C:\Users\严贤良\AppData\Local\GitHubDesktop\bin
 
 Yarn version: 
-  1.3.2
+  1.5.1
 
 Node version: 
   8.7.0
@@ -16,7 +16,7 @@ Platform:
 npm manifest: 
   {
       "name": "react-scripts-pro",
-      "version": "1.3.3",
+      "version": "1.3.8",
       "description": "Configuration and scripts for Create React App.",
       "repository": "facebookincubator/create-react-app",
       "license": "MIT",
@@ -6758,14 +6758,14 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (D:\yarn\setup\lib\cli.js:121045:13)
-      at emitNone (events.js:105:13)
-      at Interface.emit (events.js:207:7)
-      at Interface._ttyWrite (readline.js:775:16)
-      at ReadStream.onkeypress (readline.js:160:10)
+  Error: http://10.10.20.30:7001/react-scripts-pro: maintainers error
+      at Request.params.callback [as _callback] (D:\Node\modules\node_modules\yarn\lib\cli.js:65019:18)
+      at Request.self.callback (D:\Node\modules\node_modules\yarn\lib\cli.js:132430:22)
       at emitTwo (events.js:125:13)
-      at ReadStream.emit (events.js:213:7)
-      at emitKeys (internal/readline.js:420:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (readline.js:1011:36)
+      at Request.emit (events.js:213:7)
+      at Request.<anonymous> (D:\Node\modules\node_modules\yarn\lib\cli.js:133413:10)
+      at emitOne (events.js:115:13)
+      at Request.emit (events.js:210:7)
+      at IncomingMessage.<anonymous> (D:\Node\modules\node_modules\yarn\lib\cli.js:133333:12)
+      at Object.onceWrapper (events.js:314:30)
+      at emitNone (events.js:110:20)

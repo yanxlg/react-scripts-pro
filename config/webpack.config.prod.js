@@ -237,7 +237,7 @@ module.exports = {
                     // Process JS with Babel.
                     {
                         test: /\.(js|jsx|mjs)$/,
-                        loader: require.resolve('babel-loader'),
+                        loader: require.resolve('babel-loader')
                     },
                     // The notation here is somewhat confusing.
                     // "postcss" loader applies autoprefixer to our CSS.

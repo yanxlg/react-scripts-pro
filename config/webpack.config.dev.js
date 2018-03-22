@@ -143,7 +143,10 @@ module.exports = {
                     {
                         test: /\.(ts|tsx)$/,
                         use:[{
-                            loader: 'babel-loader'
+                            loader: 'babel-loader',
+                            options:{
+                                cacheDirectory: true,
+                            }
                         },{
                             loader: require.resolve('ts-loader'),
                         }]
@@ -151,6 +154,9 @@ module.exports = {
                     {
                         test: /\.(js|jsx|mjs)$/,
                         loader: require.resolve('babel-loader'),
+                        options:{
+                            cacheDirectory: true,
+                        }
                     },
                     {
                         test: /\.css$/,
@@ -282,7 +288,7 @@ module.exports = {
             from:paths.appPublic,
             to:path.join(assertDir),
         }], {
-            ignore: [ '*.html']
+            ignore: [ '*index.html']
         }),
         new CleanPlugin(),
         new InterpolateHtmlPlugin(env.raw),
