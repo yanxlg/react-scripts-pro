@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="846ffabb-2bd0-4a5d-adf1-98699d28051a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.dev.js" afterPath="$PROJECT_DIR$/config/webpack.config.dev.js" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.prod.js" afterPath="$PROJECT_DIR$/config/webpack.config.prod.js" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/yarn-error.log" afterPath="$PROJECT_DIR$/yarn-error.log" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="152">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -109,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpack.config.dev.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webpack.config.dev.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="101">
@@ -191,8 +187,8 @@
         <option value="$PROJECT_DIR$/scripts/start.js" />
         <option value="$PROJECT_DIR$/scripts/build.js" />
         <option value="$PROJECT_DIR$/config/webpack.config.prod.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/config/webpack.config.dev.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -314,12 +310,12 @@
       <workItem from="1519699400027" duration="6964000" />
       <workItem from="1520559443476" duration="995000" />
       <workItem from="1521013210604" duration="365000" />
-      <workItem from="1521704026034" duration="34000" />
+      <workItem from="1521704026034" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54676000" />
+    <option name="totallyTimeSpent" value="54699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -785,18 +781,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="291" column="11" lean-forward="true" selection-start-line="291" selection-start-column="11" selection-end-line="291" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding />
         </state>
       </provider>
