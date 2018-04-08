@@ -97,6 +97,7 @@ module.exports = {
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')),
   webName:pathsConfig.webName||"react",
+    publicExclude:pathsConfig.publicExclude?resolveApp(pathsConfig.publicExclude):null
 };
 
 let checkForMonorepo = true;
@@ -123,6 +124,7 @@ module.exports = {
   ownPath: resolveOwn(pathsConfig.ownPath||'.'),
   ownNodeModules: resolveOwn('node_modules'), // This is empty on npm 3
   webName:pathsConfig.webName||"react",
+    publicExclude:pathsConfig.publicExclude?resolveApp(pathsConfig.publicExclude):null
 };
 
 // detect if template should be used, ie. when cwd is react-scripts itself
@@ -150,6 +152,7 @@ if (useTemplate) {
     ownPath: resolveOwn(pathsConfig.ownPath||'.'),
     ownNodeModules: resolveOwn('node_modules'),
     webName:pathsConfig.webName||"react",
+      publicExclude:pathsConfig.publicExclude?resolveApp(pathsConfig.publicExclude):null
   };
 }
 // @remove-on-eject-end

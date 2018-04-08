@@ -185,7 +185,8 @@ function build(previousFileSizes) {
 }
 
 function copyPublicFolder() {
-    
+    //需要包括exclude文件或文件夹复制到root目录
+    const excludes=paths.publicExclude;
     const projectConfig=require(paths.appPackageJson);
     const proj_name=projectConfig.name;
     
@@ -204,7 +205,24 @@ function copyPublicFolder() {
     
     
     fs.copySync(paths.appPublic, path.join(paths.appBuild,assertDir), {
-    dereference: true,
-    filter: file => file !== paths.appHtml,
-  });
+        dereference: true,
+        filter: file => {
+            if(paths.publicExclude&&file.indexOf(paths.publicExclude)==0){
+                return false;
+            }
+            return file !== paths.appHtml
+        },
+    });
+    if(paths.publicExclude){
+        fs.copySync(paths.appPublic,paths.appBuild, {
+            dereference: true,
+            filter: file => {
+                if(file===paths.appPublic){return true}
+                if(file.indexOf(paths.publicExclude)==0){
+                    return true;
+                }
+                return false
+            },
+        });
+    }
 }
