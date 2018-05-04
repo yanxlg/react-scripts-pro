@@ -42,7 +42,7 @@ const hashCode = function(str){
         hash = hash & hash; // Convert to 32bit integer
     }
     
-    if(hash.indexOf("_")===0){
+    if(hash.toString().indexOf("_")===0){
         return hash;
     }else{
         return "_"+hash;

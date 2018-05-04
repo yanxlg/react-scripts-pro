@@ -51,7 +51,7 @@ const hashCode = function(str){
         hash = hash & hash; // Convert to 32bit integer
     }
     //判断是否存在_
-    if(hash.indexOf("_")===0){
+    if(hash.toString().indexOf("_")===0){
         return hash;
     }else{
         return "_"+hash;
