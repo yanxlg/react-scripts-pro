@@ -198,7 +198,11 @@ function copyPublicFolder() {
             hash = ((hash<<5)-hash)+char;
             hash = hash & hash; // Convert to 32bit integer
         }
-        return hash;
+        if(hash.indexOf("_")===0){
+            return hash;
+        }else{
+            return "_"+hash;
+        }
     };
     
     const assertDir=`static${hashCode(proj_name).toString().replace(/-/g,"_")}`;
