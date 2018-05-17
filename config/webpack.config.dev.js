@@ -21,13 +21,14 @@ const getClientEnvironment = require('./env');
 const paths = require('./paths');
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const CleanPlugin = require('./clean-css');
 const importJson =  require('./sass-import-json');
 
-
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 
 const projectConfig=require(paths.appPackageJson);
@@ -89,38 +90,18 @@ module.exports = {
         },
         plugins: [
             new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
+            new TsconfigPathsPlugin({ configFile: paths.appTsConfig }),
         ],
     },
     module: {
         strictExportPresence: true,
         rules: [
-            /*  {
+              {
                   test: /\.(js|jsx|mjs)$/,
                   enforce: 'pre',
-                  use: [
-                      {
-                          options: {
-                              formatter: eslintFormatter,
-                              eslintPath: require.resolve('eslint'),
-                              // @remove-on-eject-begin
-                              baseConfig: {
-                                  extends: [require.resolve('eslint-config-react-app')],
-                              },
-                              ignore: false,
-                              useEslintrc: false,
-                              // @remove-on-eject-end
-                          },
-                          loader: require.resolve('eslint-loader'),
-                      },
-                  ],
+                  loader: require.resolve('source-map-loader'),
                   include: paths.appSrc,
-              },*/
-            /*   {
-                   test: /\.(ts|tsx)$/,
-                   loader: require.resolve('tslint-loader'),
-                   enforce: 'pre',
-                   include: paths.appSrc,
-               },*/
+              },
             {
                 oneOf: [
                     {
@@ -146,22 +127,32 @@ module.exports = {
                         },
                     },
                     {
-                        test: /\.(ts|tsx)$/,
-                        use:[{
-                            loader: 'babel-loader',
-                            options:{
-                                cacheDirectory: true,
-                            }
-                        },{
-                            loader: require.resolve('ts-loader'),
-                        }]
+                        test: /\.(js|jsx|mjs)$/,
+                        include: paths.appSrc,
+                        loader: require.resolve('babel-loader'),
+                        options: {
+                            // @remove-on-eject-begin
+                            babelrc: false,
+                            presets: ["stage-3","react"],
+                            // @remove-on-eject-end
+                            compact: true,
+                        },
                     },
                     {
-                        test: /\.(js|jsx|mjs)$/,
-                        loader: require.resolve('babel-loader'),
-                        options:{
-                            cacheDirectory: true,
-                        }
+                        test: /\.(ts|tsx)$/,
+                        use: [
+                            {
+                                loader: 'babel-loader',
+                                options:{
+                                    cacheDirectory: true,
+                                }
+                            },{
+                                loader: require.resolve('ts-loader'),
+                                options: {
+                                    transpileOnly: true,
+                                },
+                            }
+                        ],
                     },
                     {
                         test: /\.css$/,
@@ -315,6 +306,12 @@ module.exports = {
         new CaseSensitivePathsPlugin(),
         new WatchMissingNodeModulesPlugin(paths.appNodeModules),
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+        new ForkTsCheckerWebpackPlugin({
+            async: false,
+            watch: paths.appSrc,
+            tsconfig: paths.appTsConfig,
+            tslint: paths.appTsLint,
+        }),
     ],
     node: {
         dgram: 'empty',

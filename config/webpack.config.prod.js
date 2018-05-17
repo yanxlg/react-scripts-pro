@@ -20,7 +20,8 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
-
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 
 const CleanPlugin = require('./clean-css');
@@ -162,6 +163,7 @@ module.exports = {
             // please link the files into your node_modules/ and let module-resolution kick in.
             // Make sure your source files are compiled, as they will not be processed in any way.
             new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
+            new TsconfigPathsPlugin({ configFile: paths.appTsConfig }),
         ],
     },
     module: {
@@ -173,35 +175,12 @@ module.exports = {
             
             // First, run the linter.
             // It's important to do this before Babel processes the JS.
-            /*{
-              test: /\.(js|jsx|mjs)$/,
-              enforce: 'pre',
-              use: [
-                {
-                  options: {
-                    formatter: eslintFormatter,
-                    eslintPath: require.resolve('eslint'),
-                    // @remove-on-eject-begin
-                    // TODO: consider separate config for production,
-                    // e.g. to enable no-console and no-debugger only in production.
-                    baseConfig: {
-                      extends: [require.resolve('eslint-config-react-app')],
-                    },
-                    ignore: false,
-                    useEslintrc: false,
-                    // @remove-on-eject-end
-                  },
-                  loader: require.resolve('eslint-loader'),
-                },
-              ],
-              include: paths.appSrc,
-            },*/
-            /*   {
-                test: /\.(ts|tsx)$/,
-                loader: require.resolve('tslint-loader'),
+            {
+                test: /\.(js|jsx|mjs)$/,
+                loader: require.resolve('source-map-loader'),
                 enforce: 'pre',
                 include: paths.appSrc,
-            },*/
+            },
             {
                 // "oneOf" will traverse all following loaders until one will
                 // match the requirements. When no loader matches it will fall
@@ -232,17 +211,29 @@ module.exports = {
                         },
                     },
                     {
-                        test: /\.(ts|tsx)$/,
-                        use:[{
-                            loader: 'babel-loader'
-                        },{
-                            loader: require.resolve('ts-loader'),
-                        }]
-                    },
-                    // Process JS with Babel.
-                    {
                         test: /\.(js|jsx|mjs)$/,
-                        loader: require.resolve('babel-loader')
+                        include: paths.appSrc,
+                        loader: require.resolve('babel-loader'),
+                        options: {
+                            // @remove-on-eject-begin
+                            babelrc: false,
+                            presets: ["stage-3","react"],
+                            // @remove-on-eject-end
+                            compact: true,
+                        },
+                    },
+                    {
+                        test: /\.(ts|tsx)$/,
+                        use: [
+                            {
+                                loader: require.resolve('ts-loader'),
+                                options: {
+                                    // disable type checker - we will use it in fork plugin
+                                    transpileOnly: true,
+                                    configFile: paths.appTsProdConfig
+                                },
+                            },
+                        ],
                     },
                     // The notation here is somewhat confusing.
                     // "postcss" loader applies autoprefixer to our CSS.
@@ -542,6 +533,11 @@ module.exports = {
         // https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
         // You can remove this if you don't use Moment.js:
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+        new ForkTsCheckerWebpackPlugin({
+            async: false,
+            tsconfig: paths.appTsProdConfig,
+            tslint: paths.appTsLint,
+        }),
     ],
     // Some libraries import Node modules but don't use them in the browser.
     // Tell Webpack to provide empty mocks for them so importing them works.
