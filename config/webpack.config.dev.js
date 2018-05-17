@@ -302,7 +302,7 @@ module.exports = {
         new WatchMissingNodeModulesPlugin(paths.appNodeModules),
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
         new ForkTsCheckerWebpackPlugin({
-            async: false,
+            async: true,
             watch: paths.appSrc,
             tsconfig: paths.appTsConfig,
             tslint: paths.appTsLint,

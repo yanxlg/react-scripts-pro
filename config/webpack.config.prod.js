@@ -534,7 +534,7 @@ module.exports = {
         // You can remove this if you don't use Moment.js:
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
         new ForkTsCheckerWebpackPlugin({
-            async: false,
+            async: true,
             tsconfig: paths.appTsProdConfig,
             tslint: paths.appTsLint,
         }),
