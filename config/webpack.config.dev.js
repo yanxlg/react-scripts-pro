@@ -140,16 +140,11 @@ module.exports = {
                     },
                     {
                         test: /\.(ts|tsx)$/,
-                        use: [
-                            {
-                                loader: 'babel-loader',
-                                options:{
-                                    cacheDirectory: true,
-                                }
-                            },{
+                        use: [{
                                 loader: require.resolve('ts-loader'),
                                 options: {
                                     transpileOnly: true,
+                                    configFile: paths.appTsConfig
                                 },
                             }
                         ],
