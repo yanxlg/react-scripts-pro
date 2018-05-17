@@ -128,14 +128,41 @@ module.exports = {
                     },
                     {
                         test: /\.(js|jsx|mjs)$/,
-                        include: paths.appSrc,
                         loader: require.resolve('babel-loader'),
                         options: {
                             // @remove-on-eject-begin
                             babelrc: false,
-                            presets: ["stage-3","react"],
+                            presets: ["env","stage-3","react-app"],
                             // @remove-on-eject-end
                             compact: true,
+                            plugins:["transform-remove-strict-mode","babel-plugin-add-module-exports","babel-plugin-react-require","babel-plugin-syntax-dynamic-import","babel-plugin-transform-decorators",["imports-transform", {
+                                "antd":{
+                                    "transform": "antd/es/${member}",
+                                    "preventFullImport": true,
+                                    "kebabCase":true
+                                },
+                                "ant-design-pro":{
+                                    "transform": "ant-design-pro/es/${member}",
+                                    "preventFullImport": true
+                                },
+                                "kxt": {
+                                    "transform": "kxt/lib/${member}",
+                                    "preventFullImport": true,
+                                    "kebabCase":true
+                                }
+                            }],["import", [{
+                                "libraryName": "antd",
+                                "libraryDirectory": "es",
+                                "style": false
+                            },{
+                                "libraryName": "ant-design-pro",
+                                "libraryDirectory": "es",
+                                "style": false
+                            },{
+                                "libraryName": "kxt",
+                                "libraryDirectory": "lib",
+                                "style": false
+                            }]]]
                         },
                     },
                     {
