@@ -134,35 +134,40 @@ module.exports = {
                             babelrc: false,
                             presets: ["env","stage-3","react-app"],
                             // @remove-on-eject-end
-                            compact: true,
-                            plugins:["transform-remove-strict-mode","babel-plugin-add-module-exports","babel-plugin-react-require","babel-plugin-syntax-dynamic-import","babel-plugin-transform-decorators",["imports-transform", {
-                                "antd":{
-                                    "transform": "antd/es/${member}",
-                                    "preventFullImport": true,
-                                    "kebabCase":true
-                                },
-                                "ant-design-pro":{
-                                    "transform": "ant-design-pro/es/${member}",
-                                    "preventFullImport": true
-                                },
-                                "kxt": {
-                                    "transform": "kxt/lib/${member}",
-                                    "preventFullImport": true,
-                                    "kebabCase":true
-                                }
-                            }],["import", [{
-                                "libraryName": "antd",
-                                "libraryDirectory": "es",
-                                "style": false
-                            },{
-                                "libraryName": "ant-design-pro",
-                                "libraryDirectory": "es",
-                                "style": false
-                            },{
-                                "libraryName": "kxt",
-                                "libraryDirectory": "lib",
-                                "style": false
-                            }]]]
+                            options: {
+                                // @remove-on-eject-begin
+                                babelrc: false,
+                                presets: ["env","stage-3","react-app"],
+                                // @remove-on-eject-end
+                                plugins:["transform-remove-strict-mode","babel-plugin-add-module-exports","babel-plugin-react-require","babel-plugin-syntax-dynamic-import","babel-plugin-transform-decorators",["imports-transform", {
+                                    "antd":{
+                                        "transform": "antd/es/${member}",
+                                        "preventFullImport": true,
+                                        "kebabCase":true
+                                    },
+                                    "ant-design-pro":{
+                                        "transform": "ant-design-pro/es/${member}",
+                                        "preventFullImport": true
+                                    },
+                                    "kxt": {
+                                        "transform": "kxt/lib/${member}",
+                                        "preventFullImport": true,
+                                        "kebabCase":true
+                                    }
+                                }],["import", [{
+                                    "libraryName": "antd",
+                                    "libraryDirectory": "es",
+                                    "style": false
+                                },{
+                                    "libraryName": "ant-design-pro",
+                                    "libraryDirectory": "es",
+                                    "style": false
+                                },{
+                                    "libraryName": "kxt",
+                                    "libraryDirectory": "lib",
+                                    "style": false
+                                }]]]
+                            },
                         },
                     },
                     {
@@ -328,12 +333,12 @@ module.exports = {
         new CaseSensitivePathsPlugin(),
         new WatchMissingNodeModulesPlugin(paths.appNodeModules),
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-        new ForkTsCheckerWebpackPlugin({
+       /* new ForkTsCheckerWebpackPlugin({
             async: true,
             watch: paths.appSrc,
             tsconfig: paths.appTsConfig,
             tslint: paths.appTsLint,
-        }),
+        }),*/
     ],
     node: {
         dgram: 'empty',

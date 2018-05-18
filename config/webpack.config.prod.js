@@ -218,35 +218,40 @@ module.exports = {
                             babelrc: false,
                             presets: ["env","stage-3","react-app"],
                             // @remove-on-eject-end
-                            compact: true,
-                            plugins:["transform-remove-strict-mode","babel-plugin-add-module-exports","babel-plugin-react-require","babel-plugin-syntax-dynamic-import","babel-plugin-transform-decorators",["imports-transform", {
-                                "antd":{
-                                    "transform": "antd/es/${member}",
-                                    "preventFullImport": true,
-                                    "kebabCase":true
-                                },
-                                "ant-design-pro":{
-                                    "transform": "ant-design-pro/es/${member}",
-                                    "preventFullImport": true
-                                },
-                                "kxt": {
-                                    "transform": "kxt/lib/${member}",
-                                    "preventFullImport": true,
-                                    "kebabCase":true
-                                }
-                            }],["import", [{
-                                "libraryName": "antd",
-                                "libraryDirectory": "es",
-                                "style": false
-                            },{
-                                "libraryName": "ant-design-pro",
-                                "libraryDirectory": "es",
-                                "style": false
-                            },{
-                                "libraryName": "kxt",
-                                "libraryDirectory": "lib",
-                                "style": false
-                            }]]]
+                            options: {
+                                // @remove-on-eject-begin
+                                babelrc: false,
+                                presets: ["env","stage-3","react-app"],
+                                // @remove-on-eject-end
+                                plugins:["transform-remove-strict-mode","babel-plugin-add-module-exports","babel-plugin-react-require","babel-plugin-syntax-dynamic-import","babel-plugin-transform-decorators",["imports-transform", {
+                                    "antd":{
+                                        "transform": "antd/es/${member}",
+                                        "preventFullImport": true,
+                                        "kebabCase":true
+                                    },
+                                    "ant-design-pro":{
+                                        "transform": "ant-design-pro/es/${member}",
+                                        "preventFullImport": true
+                                    },
+                                    "kxt": {
+                                        "transform": "kxt/lib/${member}",
+                                        "preventFullImport": true,
+                                        "kebabCase":true
+                                    }
+                                }],["import", [{
+                                    "libraryName": "antd",
+                                    "libraryDirectory": "es",
+                                    "style": false
+                                },{
+                                    "libraryName": "ant-design-pro",
+                                    "libraryDirectory": "es",
+                                    "style": false
+                                },{
+                                    "libraryName": "kxt",
+                                    "libraryDirectory": "lib",
+                                    "style": false
+                                }]]]
+                            },
                         },
                     },
                     {
@@ -560,11 +565,11 @@ module.exports = {
         // https://github.com/jmblog/how-to-optimize-momentjs-with-webpack
         // You can remove this if you don't use Moment.js:
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-        new ForkTsCheckerWebpackPlugin({
+    /*    new ForkTsCheckerWebpackPlugin({
             async: true,
             tsconfig: paths.appTsProdConfig,
             tslint: paths.appTsLint,
-        }),
+        }),*/
     ],
     // Some libraries import Node modules but don't use them in the browser.
     // Tell Webpack to provide empty mocks for them so importing them works.
