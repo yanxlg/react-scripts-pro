@@ -23,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -80,8 +80,8 @@
       <file leaf-file-name="webpack.config.dev.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="339" column="36" lean-forward="true" selection-start-line="339" selection-start-column="36" selection-end-line="339" selection-end-column="36" />
+            <state relative-caret-position="281">
+              <caret line="176" column="44" lean-forward="true" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -110,9 +110,11 @@
       <file leaf-file-name="webpack.config.prod.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6174">
-              <caret line="220" column="38" lean-forward="true" selection-start-line="220" selection-start-column="38" selection-end-line="220" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="335">
+              <caret line="255" column="42" lean-forward="true" selection-start-line="255" selection-start-column="42" selection-end-line="255" selection-end-column="42" />
+              <folding>
+                <element signature="e#9534#11432#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -319,12 +321,14 @@
       <workItem from="1526543327517" duration="2601000" />
       <workItem from="1526552075781" duration="93000" />
       <workItem from="1526557474473" duration="1161000" />
-      <workItem from="1526606713235" duration="706000" />
+      <workItem from="1526606713235" duration="805000" />
+      <workItem from="1526608609217" duration="112000" />
+      <workItem from="1526695449552" duration="132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76487000" />
+    <option name="totallyTimeSpent" value="76830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -335,8 +339,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53655916" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35607675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5344086" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36353946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Compute Code Lines" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -413,7 +417,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4883">
           <caret line="257" column="28" lean-forward="true" selection-start-line="257" selection-start-column="28" selection-end-line="257" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#9534#11432#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -496,7 +502,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3439">
           <caret line="181" column="14" lean-forward="false" selection-start-line="181" selection-start-column="14" selection-end-line="181" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#9534#11432#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -579,7 +587,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3439">
           <caret line="181" column="14" lean-forward="true" selection-start-line="181" selection-start-column="14" selection-end-line="181" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="e#9534#11432#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -685,14 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpackDevServer.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="76" lean-forward="false" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/fs-extra/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -754,26 +756,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
+    <entry file="file://$PROJECT_DIR$/config/webpackDevServer.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6174">
-          <caret line="220" column="38" lean-forward="true" selection-start-line="220" selection-start-column="38" selection-end-line="220" selection-end-column="38" />
+        <state relative-caret-position="399">
+          <caret line="21" column="76" lean-forward="false" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="339" column="36" lean-forward="true" selection-start-line="339" selection-start-column="36" selection-end-line="339" selection-end-column="36" />
+        <state relative-caret-position="281">
+          <caret line="176" column="44" lean-forward="true" selection-start-line="176" selection-start-column="44" selection-end-line="176" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.config.prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="255" column="42" lean-forward="true" selection-start-line="255" selection-start-column="42" selection-end-line="255" selection-end-column="42" />
+          <folding>
+            <element signature="e#9534#11432#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding />
         </state>
       </provider>
