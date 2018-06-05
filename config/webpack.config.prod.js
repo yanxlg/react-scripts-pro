@@ -36,7 +36,7 @@ const publicPath = paths.servedPath;
 // For these, "homepage" can be set to "." to enable relative asset paths.
 const shouldUseRelativeAssetPaths = publicPath === './';
 // Source maps are resource heavy and can cause out of memory issue for large source files.
-const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
+const shouldUseSourceMap = !!process.env.GENERATE_SOURCEMAP;//是否生成sourceMap
 
 
 
@@ -538,7 +538,7 @@ module.exports = {
                 warnings: false,
                 comparisons: false,
                 drop_debugger: true,
-                drop_console: true
+                drop_console: false
             },
             mangle: {
                 safari10: true,
